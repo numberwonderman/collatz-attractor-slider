@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatz Attractor Slider</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background-color: #1a1a1a; display: flex; flex-direction: column; align-items: center; }
+        main { border: 1px solid #444; }
+        #controls { margin-top: 20px; color: #fff; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div id="controls">
+        <label for="q-slider">Collatz Factor (Q): </label>
+        <input type="range" id="q-slider" min="3" max="15" value="3">
+        <span id="q-value">Q=3</span>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
